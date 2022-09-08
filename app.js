@@ -3,7 +3,6 @@ const app = express();
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
-var multer  = require('multer')
 
 require('dotenv').config();
 
