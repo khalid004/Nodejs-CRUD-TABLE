@@ -3,6 +3,7 @@ const app = express();
 const exphbs = require('express-handlebars');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
+var multer  = require('multer')
 
 require('dotenv').config();
 
@@ -27,6 +28,7 @@ app.use('/' , routes);
 
 
 app.listen(port, () => console.log(`Server listening on ${port}`));
+
 
 const pool = mysql.createPool ({
     connectionLimit : 200,
